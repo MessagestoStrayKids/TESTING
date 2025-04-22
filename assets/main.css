@@ -36,6 +36,9 @@
 		}
 		}
 
+tr {
+    display: grid
+  }
 
 	ul {
  		list-style: none;
