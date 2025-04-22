@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 	<head>
-		<title>Messages to Stray Kids Japan</title>
+		<title>MTSK Litlink</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta name="description" content="Stray Kids" />
 		<meta property="og:site_name" content="Messages to Stray Kids Japan" />
@@ -15,96 +15,6 @@
 		<link rel="stylesheet" href="assets/main.css" />
 	</head>
 	<body>
-		
-		<script src="http://code.jquery.com/jquery.js"></script>
-		<!-- This JavaScript file is required to load the XpressDox interview as well as the code required to run it -->
-		
-		<script>
-		// Avoid scoping issues by encapsulating code inside anonymous function
-		(function() {
-		// variable to store our current state
-		var cbstate;
-		
-		// bind to the onload event
-		window.addEventListener('load', function() {
-		// Get the current state from localstorage
-		// State is stored as a JSON string
-		cbstate = JSON.parse(localStorage['CBState'] || '{}');
-		
-		// Loop through state array and restore checked
-		// state for matching elements
-		for(var i in cbstate) {
-		var el = document.querySelector('input[name="' + i + '"]');
-		if (el) el.checked = true;
-		}
-		
-		// Get all checkboxes that you want to monitor state for
-		var cb = document.getElementsByClassName('save-cb-state');
-		
-		// Loop through results and ...
-		for(var i = 0; i < cb.length; i++) {
-		
-		//bind click event handler
-		cb[i].addEventListener('click', function(evt) {
-		// If checkboxe is checked then save to state
-		if (this.checked) {
-		cbstate[this.name] = true;
-		}
-		
-		// Else remove from state
-		else if (cbstate[this.name]) {
-		delete cbstate[this.name];
-		}
-		
-		// Persist state
-		localStorage.CBState = JSON.stringify(cbstate);
-		});
-		}
-		});
-		})();
-		</script>
-		<script language="JavaScript">
-		<!--
-		var TRange=null;
-		function findString (str) {
-		if (parseInt(navigator.appVersion)<4) return;
-		var strFound;
-		if (window.find) {
-		
-		// CODE FOR BROWSERS THAT SUPPORT window.find
-		strFound=self.find(str);
-		if (strFound && self.getSelection && !self.getSelection().anchorNode) {
-		strFound=self.find(str)
-		}
-		if (!strFound) {
-		strFound=self.find(str,0,1)
-		while (self.find(str,0,1)) continue
-		}
-		}
-		else if (navigator.appName.indexOf("Microsoft")!=-1) {
-		
-		// EXPLORER-SPECIFIC CODE
-		
-		if (TRange!=null) {
-		TRange.collapse(false)
-		strFound=TRange.findText(str)
-		if (strFound) TRange.select()
-		}
-		if (TRange==null || strFound==0) {
-		TRange=self.document.body.createTextRange()
-		strFound=TRange.findText(str)
-		if (strFound) TRange.select()
-		}
-		}
-		else if (navigator.appName=="Opera") {
-		alert ("Opera browsers not supported, sorry...")
-		return;
-		}
-		if (!strFound) alert ("String '"+str+"' not found!")
-		return;
-		}
-		//-->
-		</script>
 		
 <header>
 			<div style="align-items: center; justify-content: center;">
@@ -133,16 +43,6 @@
 <base target="_blank">	
 			<br>	
 	
-<div class="dropdown">
-  <button class="dropbtn">Jump To:</button>
-  <div class="dropdown-content">
-	<a href="https://japan.messagestostraykids.com/#2025" target="_self">2025</a>
-	<a href="https://japan.messagestostraykids.com/#2024" target="_self">2024</a>
-	<a href="https://japan.messagestostraykids.com/#2023" target="_self">2023</a>
-	<a href="https://japan.messagestostraykids.com/#Q&A" target="_self">Q&A</a>
-	<a href="https://japan.messagestostraykids.com/#Other" target="_self">Other Content</a>
-  </div>
-</div>
 </header><main>				
 	<table>
 <tr>
@@ -156,7 +56,7 @@
 <p><a href="https://youtu.be/aFJdQkU_abo">District 9: 9th EP. 04</a></p></td>
 <td><img><a href="https://youtu.be/5Wczhlt-N5E"><img src="http://img.youtube.com/vi/5Wczhlt-N5E/default.jpg" alt="..." /></a>
 <p><a href="https://youtu.be/5Wczhlt-N5E">SPOT KIDS: BLACK Jacket behind #1</a></p></td>
-<td><img><a href="https://youtu.be/mUMFQpkXGy0"><img src="http://img.youtube.com/vi/mUMFQpkXGy0/default.jpg" alt="..." /></a>
+</tr><td><img><a href="https://youtu.be/mUMFQpkXGy0"><img src="http://img.youtube.com/vi/mUMFQpkXGy0/default.jpg" alt="..." /></a>
 <p><a href="https://youtu.be/mUMFQpkXGy0">SPOT KIDS: BLACK Jacket behind #2</a></p></td>
 <td><img><a href="https://youtu.be/Coeg8U3H8BM"><img src="http://img.youtube.com/vi/Coeg8U3H8BM/default.jpg" alt="..." /></a>
 <p><a href="https://youtu.be/Coeg8U3H8BM">[SPOT KIDS : BLACK] Captured at Stray Kids' New Year's gift exchange!</a></p></td>
@@ -166,7 +66,7 @@
 <p><a href="https://youtu.be/vP_X6CrWdDQ">District 9: 9th EP. 01</a></p></td>
 <td><img><a href="https://youtu.be/oeABI7e-QKI"><img src="http://img.youtube.com/vi/oeABI7e-QKI/default.jpg" alt="..." /></a>
 <p><a href="https://youtu.be/oeABI7e-QKI">District 9: 9th EP. 02</a></p></td>
-<td><img><a href="https://youtu.be/7dOrTKO3NFI"><img src="http://img.youtube.com/vi/7dOrTKO3NFI/default.jpg" alt="..." /></a>
+</tr><td><img><a href="https://youtu.be/7dOrTKO3NFI"><img src="http://img.youtube.com/vi/7dOrTKO3NFI/default.jpg" alt="..." /></a>
 <p><a href="https://youtu.be/7dOrTKO3NFI">[SPOT KIDS : BLACK] 추위를 이겨내고 있는 Stray Kids!</a></p></td>
 <td><img><a href="https://youtu.be/dfzjQaIiLpw"><img src="http://img.youtube.com/vi/dfzjQaIiLpw/default.jpg" alt="..." /></a>
 <p><a href="https://youtu.be/dfzjQaIiLpw">District 9: 9th EP. 03</a></p></td>
@@ -178,7 +78,6 @@
 <p><a href="https://youtu.be/-dB3FNZ491E">SPOT KIDS : SEUNGMIN vs I N's neck and neck arm wrestling match!</a></p></td>
 <td><img><a href="https://youtu.be/TnCNvEW1SWo"><img src="http://img.youtube.com/vi/TnCNvEW1SWo/default.jpg" alt="..." /></a>
 <p><a href="https://youtu.be/TnCNvEW1SWo">SPOT KIDS : CHAN vs SEUNGMIN's arm wrestling final</a></p></td>
-
 </tr>
 </table>
 	</main>	
