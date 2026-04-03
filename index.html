@@ -49,21 +49,18 @@
 
 <script>
 
-    $(function() {
+async function populate() {
+  const requestURL =
+    "https://script.googleusercontent.com/macros/echo?user_content_key=AWDtjMXOp9uR5V-b3d2RP4khhTlhknboG_yDDqNIHbFSLdPk9amPZe3s44GJFxNqJKwtf73zvls9ot_2huWQGwFoXhKjg0m4wquP4BBLjV7oUsVtgt7ttZKIvLtStxdA646MiB6f-aQDonBzv0un4BAS__YAgmUrbcHoMiI8rfa2vwLxPPm4L28s6fIsSAyqgM3ybsGHL-z1iTd8VfUpXtqTwzzyzbv6FPPM_C6iBELC67ds1ez4CqJivY6mhyuPA7MfE8sNjiFeW8n4pv4FFSUrjM-l5ectag&lib=MCxn930Kwjq3OpYT8xP55LgefVvKC6Ndu";
+  const request = new Request(requestURL);
 
+  const response = await fetch(request);
+  const superHeroesText = await response.text();
 
-   var people = [];
-
-   $.getJSON('people.json', function(data) {
-       $.each(data.person, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
-           $(tblRow).appendTo("#userdata tbody");
-     });
-
-   });
-
-});
+  const superHeroes = JSON.parse(superHeroesText);
+  populateHeader(superHeroes);
+  populateHeroes(superHeroes);
+}
 </script>
 
 </table>
